@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import FormGenerator from "../syncano/utils/FormGenerator";
+import FormGenerator from "../../syncano/utils/FormGenerator";
 
 const MyFieldWrapper = ({ children, errors = [], ...props }) => (
   <div className="FieldWrapper">

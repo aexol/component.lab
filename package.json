@@ -1,7 +1,7 @@
 {
-  "name": "react-aexol",
-  "version": "0.3.0",
-  "description": "Aexol react repatch syncano insane repo",
+  "name": "component.lab",
+  "version": "0.1.0",
+  "description": "Aexol component.lab",
   "scripts": {
     "start": "webpack-dev-server",
     "clean": "rimraf dist",

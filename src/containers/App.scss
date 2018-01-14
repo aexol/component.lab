@@ -25,27 +25,32 @@
   background-color: white;
   height          : 100%;
   width           : 100%;
-  display         : flex;
-  flex-flow       : column nowrap;
   .Home{
-    margin: auto;
-    .WelcomeMessage{
-     width: 480px;
-     font: 24px/48px sans-serif;
-     color:#333;
+    display         : flex;
+    flex-flow       : row nowrap;
+    height          : 100%;
+    width           : 100%;
+    .Left{
+      background: #3B3B3B;
+      height          : 100%;
+      width: 320px;
+      textarea{
+        background: #3B3B3B;
+        color:white;
+        width: 100%;
+        height: 100%;
+      }
     }
-  }
-  .Alerts {
-    position   : absolute;
-    z-index    : 30;
-    display    : flex;
-    align-items: flex-start;
-    flex-wrap  : wrap;
-    .Alert {
-      padding   : 30px;
-      margin    : 30px;
-      background: white;
-      animation : alerts forwards 3s;
+    .Right{
+      background: #2F2C2C;
+      height          : 100%;
+      flex:1;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+      .Component{
+      }
     }
   }
 }
