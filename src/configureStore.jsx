@@ -1,5 +1,5 @@
 import Store, { thunk } from 'repatch'
-import { getToken, getUsername } from './syncano/server/config'
+import { getToken, getUsername } from './server/config'
 export const store = new Store({
   token: getToken(),
   username: getUsername(),

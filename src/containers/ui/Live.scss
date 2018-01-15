@@ -1,0 +1,51 @@
+@import '../../vars.scss';
+.Live{
+    display: flex;
+    flex-flow: row nowrap;
+    .Switch{
+        width: 45px;
+        height: 24px;
+        background: $darker;
+        cursor: pointer;
+        .Switcher{
+            background: $light;
+            width: 20px;
+            height: 20px;
+            margin-left: 2px;
+            margin-top: 2px;
+            position: absolute;
+            transition: $transition;
+        }
+    }
+    .LabDesc{
+        width: 45px;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        justify-content: center;
+        padding: 5px;
+        margin-left: 5px;
+        .LabLive{
+            text-transform: uppercase;
+            color:$light;
+        }
+        .Dot{
+            width: 8px;
+            height: 8px;
+            background: $red;
+            transition: $transition;
+            margin-right: 4px;
+            border-radius: 8px;
+        }
+    }
+    &.on{
+        .Switch{
+            .Switcher{
+                margin-left:23px;
+            }
+        }
+        .Dot{
+            background: $green;
+        }
+    }
+}

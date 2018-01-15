@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-let mockCss = `
-padding:15px 40px
+import Live from './ui/Live'
+let mockCss = `padding:15px 40px
 textTransform:uppercase
 fontSize:12
 fontFamily:Helvetica
@@ -27,6 +27,9 @@ class Home extends React.Component {
       text: 'Text'
     }
   }
+  live = (live) =>{
+    console.log(live)
+  }
   css = () => {
     console.log(this.state.css.split("\n"))
     let ret = this.state.css.split("\n").filter(a=>a).map(a=> a.split(":")).reduce((a,b)=>{
@@ -41,6 +44,12 @@ class Home extends React.Component {
     return (
       <div className='Home'>
         <div className="Left">
+          <div className="UpperMenu">
+            <div className="LabComponentName">
+              ans-social/button
+            </div>
+            <Live toggle={this.live} />
+          </div>
           <textarea value={this.state.css} onChange={(e) => { this.setState({ css: e.target.value }) }} />
         </div>
         <div className="Right">

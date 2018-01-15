@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import 'react-select/dist/react-select.css'
 import classnames from 'classnames'
 import { connect } from 'react-redux'
-import { display } from '../../display'
+import { display } from '../display'
 import {
   DatepickerField,
   FileField,
